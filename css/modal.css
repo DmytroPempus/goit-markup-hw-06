@@ -183,8 +183,25 @@
   }
 }
 
-#modal-switch:checked ~ .modal-backdrop {
+/* Native Popover API: functional buttons without JavaScript. */
+#modal {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  border: 0;
+  overflow: visible;
+}
+#modal:not(:popover-open) {
+  display: none;
+}
+#modal:popover-open {
+  display: flex;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+#modal::backdrop {
+  background: transparent;
 }

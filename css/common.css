@@ -52,14 +52,14 @@ address {
 }
 .container {
   width: 100%;
-  max-width: 428px;
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
 .section {
   padding: 96px 0;
 }
-.visually-hidden {
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -157,13 +157,4 @@ address {
   .section {
     padding: 120px 0;
   }
-}
-
-label.primary-button,
-label.menu-toggle,
-label.round-close {
-  cursor: pointer;
-}
-label.primary-button {
-  text-align: center;
 }
