@@ -22,7 +22,7 @@
 .modal {
   position: relative;
   width: 100%;
-  max-width: 408px;
+  max-width: 288px;
   max-height: calc(100dvh - 32px);
   overflow-y: auto;
   background: #fcfcfc;
@@ -204,4 +204,9 @@
 }
 #modal::backdrop {
   background: transparent;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+  }
 }
